@@ -1,0 +1,147 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #e8daf3; /* Light Lavender */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left Side - Heading */
+.left-section {
+    flex: 1;
+    background: #2e0249; /* Muted Purple */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Right Side - Form */
+.right-section {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(234, 210, 250, 0.8);
+}
+
+/* Input Fields & Dropdown */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2e0249;
+
+}
+
+input, select {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #B39BC8; /* Soft Blue Border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+input::placeholder {
+    color: #B39BC8; /* Soft Blue */
+    opacity: 1; /* Make sure it's fully visible */
+}
+
+
+/* Dropdown Styling */
+select {
+    background: #B39BC8;/* Soft Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    background: #F172A1; /* Bright Pink */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+button:hover {
+    background: #E64398; /* Deep Pink */
+}
+
+/* Prediction Result */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e0249;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: auto;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* GitHub Link Styling */
+.footer a {
+    color: #F172A1; /* Pink */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+/* GitHub Icon Styling */
+.footer i {
+    font-size: 20px;
+}
+
+/* Hover Effect */
+.footer a:hover {
+    text-decoration: underline;
+}
