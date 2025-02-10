@@ -24,8 +24,9 @@ The app uses a **Logistic Regression** trained on a dataset containing various s
 
 The trained model is loaded in Flask and used to provide predictions based on user input.  
 
-## 🖥️ Screenshot  
-<img src="/static/Screenshot (20).png" alt="Career Predictor Web App" width="800" height="500">  
+## ![Career Predictor Screenshot](static/Screenshot%20(20).png)
+
+<img src="static/Screenshot (20).png" alt="Career Predictor Web App" width="800" height="500">  
 
 ## 🛠 Installation  
 1. Clone this repository:  
