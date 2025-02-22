@@ -35,7 +35,15 @@ def predict():
 
         # Convert numerical values
         input_data["Age"] = float(data["age"])
-        input_data["GPA"] = float(data["gpa"])
+        # input_data["GPA"] = float(data["gpa"]) # ✅ Updated GPA Validation
+        gpa = float(data["gpa"])
+        if gpa <= 0:
+            return jsonify({"error": "Invalid GPA. Must be greater than 0."}), 400
+        elif gpa <= 5:
+            input_data["GPA"] = gpa
+        else:
+            input_data["GPA"] = gpa / 2
+            
 
         # Encode categorical values using label encoders
         input_data["Gender"] = label_encoders["Gender"].transform([data["gender"]])[0]
